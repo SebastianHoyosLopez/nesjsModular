@@ -15,7 +15,7 @@ import { CreateCustomerDto, UpdateCustomerDto } from '../dtos/customer.dto';
 @ApiTags('customers')
 @Controller('customers')
 export class CustomerController {
-  constructor(private customersService: CustomersService) { }
+  constructor(private customersService: CustomersService) {}
 
   @Get()
   @ApiOperation({ summary: 'list of customers' })

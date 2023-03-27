@@ -12,10 +12,10 @@ import { ApiTags } from '@nestjs/swagger';
 
 import { CategoriesService } from '../services/categories.service';
 import { CreateCategoryDto, UpdateCategoryDto } from './../dtos/category.dtos';
-@ApiTags("categories")
+@ApiTags('categories')
 @Controller('categories')
 export class CategoriesController {
-  constructor(private categoriesService: CategoriesService) { }
+  constructor(private categoriesService: CategoriesService) {}
 
   @Get()
   findAll() {
